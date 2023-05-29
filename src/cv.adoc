@@ -1,12 +1,11 @@
 :title: CV de Ludovic RONSIN
 :doctype: article
 
-:last-updated: 2023-05-29
 :last-update-label: Dernière modification
 
 :toc: left
 :toc-title: CV
-:toc-level: 2
+:toclevels: 2
 
 :stylesheet: theme/html-theme.css
 
@@ -19,8 +18,7 @@
 
 
 = Ludovic RONSIN
-
-_Développeur depuis 18 ans_
+Développeur passioné depuis 2004 !
 
 
 == Compétences

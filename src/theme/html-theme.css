@@ -7,60 +7,56 @@
     font-size: 14px;
 }*/
 
+#author {
+    font-style: italic;
+}
+
 @media screen and (min-width: 768px) {
     body.toc2 {
         padding: 0;
     }
     #toc.toc2 {
-      position: relative;
-      width: 100%;
-      height: inherit;
+        position: relative;
+        width: 100%;
+        height: inherit;
     }
 }
 
 @media screen and (min-width: 1080px) {
     body.toc2 {
-            padding: 0;
+        padding: 0;
     }
 }
 @media screen and (min-width: 1280px) {
-
     #toc.toc2 {
-      margin-top: 0 !important;
-      background: #f8f8f7;
-      position: fixed;
-      width: 15em;
-      left: 0;
-      top: 0;
-      border: 1px solid #e7e7e9;
-      border-right: 1px solid #e7e7e9;
-      border-top-width: 1px !important;
-      border-bottom-width: 1px !important;
-      z-index: 1000;
-      padding: 1.25em 1em;
-      height: 100%;
-      overflow: auto;
+        margin-top: 0 !important;
+        background: #f8f8f7;
+        position: fixed;
+        width: 16em;
+        left: 0;
+        top: 0;
+        border: 1px solid #e7e7e9;
+        border-right: 1px solid #e7e7e9;
+        border-top-width: 1px !important;
+        border-bottom-width: 1px !important;
+        z-index: 1000;
+        padding: 1.25em 1em;
+        height: 100%;
+        overflow: auto;
     }
-
+    #content #toc {
+        padding-top: 6em;
+    }
     body.toc2 {
         padding-left: 16em;
     }
-
-    #content #toc.toc2 {
-        padding-top: 6em;
-        width: 16em;
-    }
-
 }
 
 @media screen and (min-width: 1601px) {
-
     body.toc2 {
         padding-left: 20em;
     }
-
-    #content #toc.toc2 {
-        padding-top: 6em;
+    #toc.toc2 {
         width: 20em;
     }
 
@@ -70,11 +66,10 @@
     body.toc2 {
         padding-left: 28em;
     }
-    #content #toc.toc2 {
+    #toc.toc2 {
         padding-top: 6em;
         width: 28em;
     }
-
 }
 
 #header, #content, #footnotes, #footer {
