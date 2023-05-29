@@ -18,7 +18,7 @@
 
 
 = Ludovic RONSIN
-Développeur passioné depuis 2004 !
+Développeur passionné depuis 2004 !
 
 
 == Compétences
@@ -78,7 +78,7 @@ Le périmètre fonctionnel est composé d'applications de
     * d'espace adhésion pour les postulants
     * back-office assureur
 
-L'ensemble se réparti en 35 repositories Git : Applications, Librairies, Services, Outils
+L'ensemble se répartit en 35 repositories Git : Applications, Librairies, Services, Outils
 
 
 .*Activités transverses :*
@@ -100,11 +100,11 @@ L'ensemble se réparti en 35 repositories Git : Applications, Librairies, Servic
     * Maven BOM interne à l'équipe pour améliorer la gestion des dépendances
     * Pipeline Jenkins spécifiques (Jenkinsfile) pour chaîner les builds des libs et applications
     * Migrations SVN -> Git (svn-all-fast-export),
-    * Migrations de jboss/windows vers tomcat/linux
+    * Migrations de JBoss / Windows vers Tomcat / Linux
     * Optimisations pool JDBC
     * Pool de connexions HTTP sortantes, monitoring via Graphite / Grafana
     * Corrections de fuites mémoires, analyses de heapdump
-    * Optimisations de performances (Jprofiler)
+    * Optimisations de performances (JProfiler)
     * Corrélation (traçabilité) des logs entre applications (brave)
 --
 
@@ -253,7 +253,7 @@ Env. technique ::: Java, Spring, GWT
 
 .Clavis
 **********
-Modules SSO pour authentification des partenaires basé sur Atlassian Crowd :
+Module SSO pour authentification des partenaires basé sur Atlassian Crowd :
 
 * Filtre de servlet
 * Mire de login
@@ -276,7 +276,12 @@ Jui. 2009 - Fév. 2010::
 [.poste]*Ingénieur de conception et développement .Net*
 
 Projet en régie. Equipe de 8 personnes. +
-Corrections d'anomalies et réalisation d'évolutions sur une solution complète de gestion de billetterie et boutique : Programmation, vente (caisse, web, bornes tactiles), édition de billet (papier, numérique), gestion client, contrôle d'accès, ...
+Corrections d'anomalies et réalisation d'évolutions sur une solution complète de gestion de billetterie et boutique :
+Programmation,
+vente (caisse, web, bornes tactiles),
+édition de billets (papier, numérique),
+gestion client,
+contrôle d'accès, ...
 
 * Chiffrages
 * Spécifications fonctionnelles
@@ -322,7 +327,12 @@ Déc. 2006 - Mars 2008::
 [.poste]*Ingénieur de conception et développement .Net*
 
 Projet au forfait. Equipe de 10 à 15 personnes. +
-Corrections d'anomalies et réalisation d'évolutions sur une solution complète de gestion de billetterie et boutique : Programmation, vente (caisse, web, bornes tactile), édition de billet (papier, numérique), gestion client, contrôle d'accès, ...
+Corrections d'anomalies et réalisation d'évolutions sur une solution complète de gestion de billetterie et boutique :
+Programmation,
+vente (caisse, web, bornes tactiles),
+édition de billets (papier, numérique),
+gestion client,
+contrôle d'accès, ...
 
 * Définition d'exigences
 * Chiffrages
@@ -431,12 +441,12 @@ VBA Access 2003 (Interface), SQL Server 2000
 === Professionnelles
 
 [horizontal.formations, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
-2020 :: Advanced Architecting on AWS* _(3j)_
-2019 :: Angular / TypeScript / RxJS* _(5j)_
-        Architecting on AWS* _(3j)_
-2018 :: Domain Driven Design* - Cyrille Martraire _(3j)_
+2020 :: Advanced Architecting on AWS _(3j)_
+2019 :: Angular / TypeScript / RxJS _(5j)_
+        Architecting on AWS _(3j)_
+2018 :: Domain Driven Design - Cyrille Martraire _(3j)_
 2017 :: Machine learning*, cours du soir ML Week _(20h)_
-2016 :: Git* _(3j)_
+2016 :: Git _(3j)_
 2015 :: Linux _(2j)_
 2014 :: Développement java _(3j)_ +
         HTML + CSS _(2j)_ +
