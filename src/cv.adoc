@@ -8,10 +8,10 @@
 :toc-title: CV
 :toc-level: 2
 
-:stylesheet: theme/cv.css
+:stylesheet: theme/html-theme.css
 
 :pdf-themesdir: theme
-:pdf-theme: cv.yml
+:pdf-theme: pdf-theme.yml
 
 // Custom attributes
 :dd-labelwidth: 18%
@@ -69,9 +69,9 @@ Jan. 2014 - Jui. 2023::
 ****
 [.client]*Kereis / cbp*
 [.lieu]_St Herblain, 44_ +
-[.poste]*Architecte IT* (depuis ???)
+[.poste]*Architecte IT*
 
-Développeur puis Architecte (depuis ????) au sein d'une équipe qui a évoluée de 10 à plus de 30 personnes. +
+Développeur puis Architecte (depuis 2017) au sein d'une équipe qui a évoluée de 10 à plus de 30 personnes. +
 Fonctionnement en Agilité : Scrum / Kanban. +
 Le périmètre fonctionnel est composé d'applications de
 
