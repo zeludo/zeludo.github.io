@@ -1,0 +1,482 @@
+:title: CV de Ludovic RONSIN
+:doctype: article
+
+:last-updated: 2023-05-29
+:last-update-label: Dernière modification
+
+:toc: left
+:toc-title: CV
+:toc-level: 2
+
+:stylesheet: theme/cv.css
+
+:pdf-themesdir: theme
+:pdf-theme: cv.yml
+
+// Custom attributes
+:dd-labelwidth: 18%
+:dd-itemwidth: 82%
+
+
+= Ludovic RONSIN
+
+_Développeur depuis 18 ans_
+
+
+== Compétences
+
+[horizontal.skills,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Langages        :: Java, Groovy, TypeScript, Javascript,
+                   AsciiDoc
+                   footnote:asciidoc[Ce CV est écrit en https://asciidoctor.org[AsciiDoc] :)
+                   Les sources sont consultables sur https://github.com/zeludo/zeludo.github.io[github]],
+                   PlantUML, (_Kotlin_)
+
+Frameworks      :: Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring Batch, +
+                   Resilience4j, Spring Retry +
+                   Swagger, +
+                   ElasticSearch, +
+                   Grails, +
+                   Http Client, Jaxrs, HttpBuilder ng +
+                   Angular, NgRx, Angularjs
+Tests           :: JUnit, Spockframework, Assertj, Mockito, Easymock
+Sécurité        :: JWT, CORS, MTLS, CSR, SAML
+Performance     :: Jprofiler, Jmeter, Neoload
+IDE             :: Intellij Idea, Eclipse, Eclipse MAT
+Méthodologie    :: Agilité Scrum, Kanban
+Versioning      :: Git (Gitlab, Github), SVN
+Build           :: Gradle _(platform, convention plugin, test fixtures)_, +
+                   Maven _(BOM, dev d'un Plugin)_, +
+                   Npm, Webpack
+CI              :: Gitlab CI,
+                   Jenkins (Jenkinsfile),
+                   Travis CI, Nexus, Sonarqube
+Platform        :: AWS, Tomcat, Docker, JBoss, Chef
+Base de données :: PostgreSql, DB2, Oracle, SQL Server, Graphite, InfluxDB
+APM             :: Dynatrace, Kibana, Grafana
+OS              :: Linux : Archlinux, Gentoo, Ubuntu (perso à 100% depuis 2010, pro depuis 2017)
+
+
+== Expériences Professionelles
+[horizontal,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+
+
+
+Jan. 2014 - Jui. 2023::
+[.entreprise]_Kereis / cbp_::
++
+[[sectiontest]]
+****
+[.client]*Kereis / cbp*
+[.lieu]_St Herblain, 44_ +
+[.poste]*Architecte IT* (depuis ???)
+
+Développeur puis Architecte (depuis ????) au sein d'une équipe qui a évoluée de 10 à plus de 30 personnes. +
+Fonctionnement en Agilité : Scrum / Kanban. +
+Le périmètre fonctionnel est composé d'applications de
+
+    * vente d'assurance emprunteur pour banquiers et courtiers
+    * back-office pour les gestionnaires cbp
+    * d'espace adhésion pour les postulants
+    * back-office assureur
+
+L'ensemble se réparti en 35 repositories Git : Applications, Librairies, Services, Outils
+
+
+.*Activités transverses :*
+--
+    * Roadmap technique
+    * Accompagnement d'une équipe (3 pers)  dédiée au désendettement
+    * Organisation des audits de sécurité (pentests), prise en compte des retours et corrections des vulnérabilités
+    * Recrutements de développeurs
+    * Organisation de l'équipe
+    * Membre des communautés : Sécurité, Dev / Archi, CI
+--
+
+
+.*Contributions particulières :*
+--
+    * Accompagnement des devs : Revue de code, peer programming
+    * Stratégies de migration des utilisateurs sur les nouvelles versions d'applications
+    * Résilience : Retry et timeout sur tous les clients HTTP
+    * Maven BOM interne à l'équipe pour améliorer la gestion des dépendances
+    * Pipeline Jenkins spécifiques (Jenkinsfile) pour chaîner les builds des libs et applications
+    * Migrations SVN -> Git (svn-all-fast-export),
+    * Migrations de jboss/windows vers tomcat/linux
+    * Optimisations pool JDBC
+    * Pool de connexions HTTP sortantes, monitoring via Graphite / Grafana
+    * Corrections de fuites mémoires, analyses de heapdump
+    * Optimisations de performances (Jprofiler)
+    * Corrélation (traçabilité) des logs entre applications (brave)
+--
+
+
+.*Principaux projets*
+--
+
+.Espace Adhésion v2
+**********
+Refonte de l'espace adhésion pour permettre plus de flexibilité métier. +
+Évolution de la stack du front-office de vente afin qu'elle devienne une base pour 2 autres applications :
+
+    * Mono repo Git hébergeant les 3 applications
+    * Build Gradle multi-modules (platform, plugin convention, test fixtures)
+    * Plateforme technique commune configurable
+    * Partage d'API métiers entre les applications
+    ** Découpage de l'API métier en modules (libs) facilement réutilisables
+    ** Utilisation de l'*autoconfiguration Spring Boot* pour adapter aux besoins spécifiques des applications
+    ** Définition des services exposés et de leurs habilitations par application
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique :::
+Groovy, Spring Boot, Gradle, Swagger (Springfox), Asciidoc, Spockframework, Quartz Scheduler
+**********
+
+
+.Sésame v5
+**********
+Application de vente d'assurance emprunteur destinée à des conseillers bancaires / courtiers. +
+API pour l'intégration avec les partenaires (CRM, comparateurs internets, ...) +
+
+*Backend* : API REST en Spring Boot
+
+    * API interne métier, qui masque la complexité du modèle métier legacy
+    * API à destination des partenaires
+    * Documentation HTML de l'api générée et exposée par l'application
+    * Annotations custom de validation
+    * Sécurité :
+    ** CORS, Content Security Policy
+    ** Validation stricte des entrées, nettoyage AntiSamy
+    * Réflexion sur l'UX
+    * Accompagnement des partenaires
+
+*Frontend* : Angular, Store NgRx (*programmation réactive*)
+
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique :::
+* Groovy, Spring Boot (Actuator), Spring Security, Gradle, ehcache, Swagger (Springfox), Asciidoc, Spockframework
+* DB2, H2, ElasticSearch
+* TypeScript, Angular, NgRx, Karma, Jasmine, Npm
+**********
+
+
+.Edition
+**********
+API de génération de documents PDF.
+
+* Conversion HTML en PDF
+* Tag customs pour permettre ue meilleure réusabilité des JSP
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique :::
+Java, Spring MVC, JSP, Flyingsaucer, Jetty, AWS
+**********
+
+
+.Espace Adhésion / Questionnaire de Santé
+**********
+Espace à destination des postulants, leur permettant de remplir leur questionnaire de santé et signer numériquement (Docaposte) leurs documents d'adhésion. +
+Les applications sont composées de backend et frontend qui communiquent en REST.
+
+* Sécurité :
+** Appel de services REST avec authentification MTLS
+** Pull Request sur la lib grails spring security pour corriger une faille sur la gestion des tokens JWT
+** hébergement HADS pour les données médicales
+* Planification de tâches : Relances postulants, Rattrapage des erreurs / indisponibilités des services externes.
+* Programmation paralléle
+* Envoi de SMS
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique :::
+* Groovy, Grails, Gorm, Gpars, Spring Security Rest, JWT, Liquibase, HttpBuilder, Spockframework, Quartz Scheduler
+* Javascript, Angularjs, Grunt, Bower, Karma, Jasmine, Npm
+* PostgreSql, H2
+* AWS / Clever Cloud, Travis CI
+**********
+
+
+.Portail partenaire
+**********
+Portail de connexion aux applications pour les partenaires. +
+
+* Ajout de la possibilité de se connecter en *SAML 2*.
+* Gestion de l'authentification et routage des flux aux applications
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique :::
+Java, Spring Security SAML, Apache Camel, Shibboleth IdP
+**********
+
+
+.Gestion des commissions
+**********
+Batches comptables de calcul des commissions
+
+* Optimisation de batches
+* Mise en place de files de messages MQ Series consommées en JMS
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique ::: Java, Spring Batch, Spring JMS, MQ Series
+**********
+
+--
+****
+
+Fév. 2010 - Jan 2014::
+[.entreprise]_SQLI_::
++
+****
+[.client]*Cbp*
+[.lieu]_St Herblain, 44_ +
+[.poste]*Ingénieur de conception et développement*
+
+.Tarification
+**********
+
+* Refonte du moteur de tarification de manière modulaire et extensible, afin de simplifier l'intégration de nouveaux produits.
+* Stratégie de migration
+* Import de grille de tarif par fichier MS Excel
+* Tests end to end
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique ::: Java, Spring, Hibernate, Apache POI, Junit, AssertJ
+**********
+
+.Sésame v4
+**********
+
+Intégration d'un nouveau distributeur sur le front-office de vente d'assurance emprunteur.
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique ::: Java, Spring, GWT
+**********
+
+
+.Clavis
+**********
+Modules SSO pour authentification des partenaires basé sur Atlassian Crowd :
+
+* Filtre de servlet
+* Mire de login
+* Application d'administration des comptes
+
+[horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique ::: Java, Spring, GWT, Atlassian Crowd, Fitnesse
+**********
+
+****
+
+
+Jui. 2009 - Fév. 2010::
+[.entreprise]_SQLI_::
++
+****
+[horizontal,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+[.client]*Satori*
+[.lieu]_Couëron, 44_ +
+[.poste]*Ingénieur de conception et développement .Net*
+
+Projet en régie. Equipe de 8 personnes. +
+Corrections d'anomalies et réalisation d'évolutions sur une solution complète de gestion de billetterie et boutique : Programmation, vente (caisse, web, bornes tactiles), édition de billet (papier, numérique), gestion client, contrôle d'accès, ...
+
+* Chiffrages
+* Spécifications fonctionnelles
+* Conceptions techniques
+* Développements
+* Tests
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique:::
+*.Net 3.5* : C#, WCF, WinForm, ASP.NET, Compact Framework, Web Services +
+IIS 6, SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System
+****
+
+Mars 2008 - Juin 2009::
+[.entreprise]_SQLI_::
++
+****
+[.client]*Civitas (Cegid)*
+[.lieu]_Nantes, 44_ +
+[.poste]*+Ingénieur de conception et développement J2EE+* +
+Projet en régie. Équipe de 5 à 15 personnes.
+
+Développement de nouvelles fonctionnalités et intégration à l’existant sur une application web de gestion financière pour les collectivités locales et les établissements publics.
+
+* Chiffrages
+* Spécifications fonctionnelles
+* Mise en place de process techniques
+* Conception technique
+* Développements
+* Modification du Framework Civitas et formation des développeurs
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique:::
+Java EE 6, Hibernate, JUnit, DBUnit, Oracle 10, Eclipse
+****
+
+Déc. 2006 - Mars 2008::
+[.entreprise]_SQLI_::
++
+****
+[.client]*Satori*
+[.lieu]_Couëron, 44_ +
+[.poste]*Ingénieur de conception et développement .Net*
+
+Projet au forfait. Equipe de 10 à 15 personnes. +
+Corrections d'anomalies et réalisation d'évolutions sur une solution complète de gestion de billetterie et boutique : Programmation, vente (caisse, web, bornes tactile), édition de billet (papier, numérique), gestion client, contrôle d'accès, ...
+
+* Définition d'exigences
+* Chiffrages
+* Spécifications fonctionnelles
+* Conceptions techniques
+* Développements
+* Tests
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique:::
+* .Net 2.0 : C#2.0, WinForm, ASP.NET, Compact Framework, Web Services +
+* IIS 6 SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System
+
+****
+
+Sept. 2005 - Nov. 2006::
+[.entreprise]*dixip*::
++
+****
+[.client]*MDPH 56*
+[.lieu]_Hennebont (56)_ +
+[.poste]*Ingénieur de conception et  développement* +
+
+Conception, réalisation d'un système sécurisé de partage d'informations entre des logiciels hétérogènes existants (EAI).
+Architecture flexible et évolutive (plugins).
+Le système permet la mise en commun de données provenant de différentes structures publiques d'accompagnement de personnes handicapées.
+Les données recueillies constituent un dossier qui permet de faciliter l'évaluation des besoins matériels et financiers de la personne.
+
+* Spécifications techniques
+* Responsable technique des développements (2 développeurs)
+* Développements : Protocole de communication client/serveur, Serveur (Service Windows + Interface de contrôle & paramétrage)
+* Fonction SQL de recherche de noms en phonétique (_soundex_)
+* Formation d'un développeur Access à la programmation Objet
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique:::
+.Net 2.0 : C#2.0, WinForms, Custom Controls, TCP, Services Windows, Remoting, Serialization, Data Set, API Windows +
+SQL Server 2000, Visual Studio 2005, *SSL* 3 (AES 256), *Hash MD5*, XML
+
+****
+
+Mar. 2005 - Sept. 2005::
+[.entreprise]_dixip_::
++
+****
+[.client]*dixip*
+[.lieu]_Lorient (56)_ +
+[.poste]*Analyste programmeur / Formateur* +
+
+* Conception et Réalisation d'applications mobiles sur Smartphones et PDA
+* Développement d’applications Web
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique:::
+* Java J2ME : J2ME Polish, Bluetooth, HTTP, *AES*, MD5 +
+* 1.NET CF 2.0 : C#, *Bluetooth* +
+* Java J2EE, Struts, Hibernate, MySQL
+
+****
+
+
+Fév. 2005::
+[.entreprise]_dixip_::
++
+****
+[.client]*Groupement Informatique du Crédit Mutuel*
+[.lieu]_Brest (29)_ +
+[.poste]*Ingénieur de conception et  développement*
+
+Application de consultation d’informations bancaires sur Smartphone.
+
+* Conception et réalisation
+* Livraison du code source
+* Formation de 4 développeurs à la plateforme et outils utilisés (3 jours en régie)
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique:::
+Java J2ME sous NetBean, HTTPS, J2ME Polish (GUI)
+
+****
+
+
+Oct. 2004 - Jan. 2005::
+[.entreprise]_dixip_::
++
+****
+[.client]*Logisyst56*
+[.lieu]_Éditeur de logiciel, Hennebont (56)_ +
+[.poste]*Analyste programmeur / Formateur* +
+Maintenance et évolution d’un logiciel de gestion d’un magasin de matériel médical.
+
+* Modifications fonctionnelles et corrections de    bugs
+* Installation chez le client
+* Formation d'utilisateurs
+* Hotline
+
+[horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Env. technique:::
+VBA Access 2003 (Interface), SQL Server 2000
+
+****
+
+
+== Formations
+
+=== Professionnelles
+
+[horizontal.formations, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+2020 :: Advanced Architecting on AWS* _(3j)_
+2019 :: Angular / TypeScript / RxJS* _(5j)_
+        Architecting on AWS* _(3j)_
+2018 :: Domain Driven Design* - Cyrille Martraire _(3j)_
+2017 :: Machine learning*, cours du soir ML Week _(20h)_
+2016 :: Git* _(3j)_
+2015 :: Linux _(2j)_
+2014 :: Développement java _(3j)_ +
+        HTML + CSS _(2j)_ +
+2010 :: Spring + JPA _(4j)_
+
+=== Conférences
+
+[horizontal.formations, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Devoxx France   :: 2013, 2014, 2015, 2017, 2020, 2022
+Devfest Nantes  :: 2015, 2016, 2017, 2018, 2019, 2021, 2022
+BreizhCamp      :: 2015
+
+=== Scolaires
+
+[horizontal.formations,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+2002 - 2004 ::
+    Licence et Maîtrise GEII _(Génie Électrique et Informatique Industrielle)_
+    [.small]+option Ingénierie des circuits et des systèmes+ +
+    _IUP de Lorient (56)_
+
+2001 - 2002 ::
+    DUT GEII
+    [.small]+option Réseaux Locaux Industriels+ +
+    _IUT de Lannion (22)_
+
+2000 ::
+    Baccalauréat série Scientifique
+    [.small]+option Technologie Industrielle+ +
+    _Lycée La Mennais à Ploërmel (56)_
+
+
+== Langues
+
+[horizontal.formations,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
+Anglais ::
+    Courant +
+    TOEIC (2002) : 820/995 +
+    Séjour de 3 mois à Cardiff (UK) en 2003
+Allemand ::
+    Scolaire
+

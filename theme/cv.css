@@ -1,0 +1,169 @@
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+
+/*@import url(https://raw.githubusercontent.com/darshandsoni/asciidoctor-skins/gh-pages/css/material-blue.css);*/
+
+/*body {
+    font-size: 14px;
+}*/
+
+@media screen and (min-width: 768px) {
+    body.toc2 {
+        padding: 0;
+    }
+    #toc.toc2 {
+      position: relative;
+      width: 100%;
+      height: inherit;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    body.toc2 {
+            padding: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+
+    #toc.toc2 {
+      margin-top: 0 !important;
+      background: #f8f8f7;
+      position: fixed;
+      width: 15em;
+      left: 0;
+      top: 0;
+      border: 1px solid #e7e7e9;
+      border-right: 1px solid #e7e7e9;
+      border-top-width: 1px !important;
+      border-bottom-width: 1px !important;
+      z-index: 1000;
+      padding: 1.25em 1em;
+      height: 100%;
+      overflow: auto;
+    }
+
+    body.toc2 {
+        padding-left: 16em;
+    }
+
+    #content #toc.toc2 {
+        padding-top: 6em;
+        width: 16em;
+    }
+
+}
+
+@media screen and (min-width: 1601px) {
+
+    body.toc2 {
+        padding-left: 20em;
+    }
+
+    #content #toc.toc2 {
+        padding-top: 6em;
+        width: 20em;
+    }
+
+}
+
+@media screen and (min-width: 1921px) {
+    body.toc2 {
+        padding-left: 28em;
+    }
+    #content #toc.toc2 {
+        padding-top: 6em;
+        width: 28em;
+    }
+
+}
+
+#header, #content, #footnotes, #footer {
+    max-width: 1200px;/*Equiv. à 75em à 16px. Défaut 62.5em à 16px*/
+}
+h1, h2, p, td.content, span.alt, summary {
+    letter-spacing: 0em;
+}
+
+.openblock > .title + .content > .sidebarblock:first-child {
+    margin-top: 1.25em;
+}
+.openblock > .title + .content > .sidebarblock {
+    margin-bottom: 0em;
+}
+
+
+li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .olist .ulis {
+    margin-bottom: 0.40em; /*0.625em*/
+}
+
+.hdlist > table {
+    width: 100%;
+}
+
+td.hdlist1, td.hdlist2 {
+    padding-bottom: 2em;
+}
+
+.client {
+    font-size: 1.1em
+}
+
+.sidebarblock {
+    background: #f9f9f8;
+    border: none;
+    border-radius: 8px;
+    padding-top: 0.1em;
+    /*padding-bottom: 0em;*/
+}
+.sidebarblock .sidebarblock .content {
+    border-bottom: dimgrey solid 1px;
+}
+.sidebarblock .sidebarblock:last-child .content  {
+    border-bottom: none;
+}
+
+.sidebarblock > .content > .title {
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    font-family: "Noto Serif","DejaVu Serif",serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.tech dt,
+.tech .hdlist1 {
+    /*color: dimgray;*/
+    font-size: 0.95em;
+}
+
+.tech dd p,
+.tech .hdlist2 p,
+.skills dd p,
+.skills .hdlist2 p {
+    font-family: "Noto sans mono", monospace;
+    font-size: 0.9em;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.skills dd p,
+.skills .hdlist2 p,
+.formations dd p,
+.formations .hdlist2 p {
+    margin-bottom: 0em;
+}
+
+.tech td.hdlist1,
+.tech td.hdlist2,
+.skills td.hdlist1,
+.skills td.hdlist2 {
+    padding-bottom: 0.5em;
+}
+
+.formations td.hdlist1,
+.formations td.hdlist2 {
+    padding-bottom: 0.5em;
+}

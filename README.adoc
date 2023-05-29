@@ -1,0 +1,5 @@
+= CV
+
+Mon CV écrit en asciidoc.
+
+La version html est https://zeludo.github.io[accessible ici]

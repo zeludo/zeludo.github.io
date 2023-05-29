@@ -1,0 +1,31 @@
+# Cf. https://github.com/asciidoctor/asciidoctor-pdf/blob/main/data/themes/default-theme.yml
+extends: default
+
+base:
+    font_size: 8
+    font_size_large: round($base_font_size * 1.25)
+    font_size_small: round($base_font_size * 0.85)
+    font_size_min: $base_font_size * 0.75
+
+heading:
+    text_align: left
+    font_color: $base_font_color
+    font_style: bold
+    # h1 is used for part titles (book doctype) or the doctitle (article doctype)
+    h1_font_size: floor($base_font_size * 2.6)
+    # h2 is used for chapter titles (book doctype only)
+    h2_font_size: floor($base_font_size * 2.15)
+    h3_font_size: round($base_font_size * 1.7)
+    h4_font_size: $base_font_size_large
+    h5_font_size: $base_font_size
+    h6_font_size: $base_font_size_small
+
+code:
+    font-size: ceil($base_font_size)
+
+caption:
+    font-size: ceil($base_font_size)
+
+table:
+    head:
+        background_color: F5F5F5
