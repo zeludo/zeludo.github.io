@@ -3,12 +3,32 @@
 
 /*@import url(https://raw.githubusercontent.com/darshandsoni/asciidoctor-skins/gh-pages/css/material-blue.css);*/
 
-/*body {
-    font-size: 14px;
-}*/
+body {
+    /*transform-origin: center 0;
+    transform: scale(0.85)*/
+}
 
 #author {
     font-style: italic;
+}
+
+dl {
+    padding: 0 0.5em;
+}
+dl dt {
+    float: left;
+    clear: left;
+    padding:  0 0.25em;
+    margin: 0 1em 0 0;
+    background:rgba(0,0,0,.78);
+    color:white;
+    width: 18%;
+    min-width: 195px;
+}
+dl dd {
+    padding: 0 0 0 0%;
+    margin: 0 0 0 0em;
+    text-align: justify;
 }
 
 @media screen and (min-width: 768px) {
@@ -28,6 +48,10 @@
     }
 }
 @media screen and (min-width: 1280px) {
+    body {
+        margin: 0;
+        /*transform: scale(1);*/
+    }
     #toc.toc2 {
         margin-top: 0 !important;
         background: #f8f8f7;
@@ -40,9 +64,13 @@
         border-top-width: 1px !important;
         border-bottom-width: 1px !important;
         z-index: 1000;
-        padding: 1.25em 1em;
+        padding: 6em 1.25em 1em 1.25em;
         height: 100%;
         overflow: auto;
+    }
+    ##header, #content, #footnotes, #footer  {
+        padding-left: 3px;
+        padding-right: 3px;
     }
     #content #toc {
         padding-top: 6em;
@@ -50,9 +78,20 @@
     body.toc2 {
         padding-left: 16em;
     }
+    /* Description list en colonne */
+    dl {
+        padding: 0 0.5em;
+    }
+    dl dt {
+        float: left;
+        clear: left;
+    }
+    dl dd {
+        padding: 0 0 0 18%;
+    }
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1600px) {
     body.toc2 {
         padding-left: 20em;
     }
@@ -67,13 +106,15 @@
         padding-left: 28em;
     }
     #toc.toc2 {
-        padding-top: 6em;
         width: 28em;
     }
 }
 
 #header, #content, #footnotes, #footer {
     max-width: 1200px;/*Equiv. à 75em à 16px. Défaut 62.5em à 16px*/
+    min-width: 560px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 h1, h2, p, td.content, span.alt, summary {
     letter-spacing: 0em;

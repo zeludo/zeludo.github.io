@@ -1,5 +1,6 @@
 :title: CV de Ludovic RONSIN
 :doctype: article
+:docinfo:
 
 :last-update-label: Dernière modification
 
@@ -56,10 +57,8 @@ OS              :: Linux : Archlinux, Gentoo, Ubuntu (perso à 100% depuis 2010,
 
 
 == Expériences Professionelles
-[horizontal,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 
-
-
+// [horizontal,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Jan. 2014 - Jui. 2023::
 [.entreprise]_Kereis / cbp_::
 +
@@ -302,6 +301,7 @@ Mars 2008 - Juin 2009::
 [.client]*Civitas (Cegid)*
 [.lieu]_Nantes, 44_ +
 [.poste]*+Ingénieur de conception et développement J2EE+* +
+
 Projet en régie. Équipe de 5 à 15 personnes.
 
 Développement de nouvelles fonctionnalités et intégration à l’existant sur une application web de gestion financière pour les collectivités locales et les établissements publics.
@@ -422,6 +422,7 @@ Oct. 2004 - Jan. 2005::
 [.client]*Logisyst56*
 [.lieu]_Éditeur de logiciel, Hennebont (56)_ +
 [.poste]*Analyste programmeur / Formateur* +
+
 Maintenance et évolution d’un logiciel de gestion d’un magasin de matériel médical.
 
 * Modifications fonctionnelles et corrections de    bugs
