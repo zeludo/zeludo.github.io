@@ -23,4 +23,4 @@ jobs:
                     source_dir: src/ # default is .
                     # slides_build: true
                     # pre_build:
-                    # post_build:
+                    post_build: mv cv.html index.html
