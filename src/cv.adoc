@@ -25,10 +25,10 @@ endif::[]
 :dd-labelwidth: 18%
 :dd-itemwidth: 82%
 
-:asciidoc-link: https://asciidoctor.org[AsciiDoc]
-:git-remote-link: https://github.com/zeludo/zeludo.github.io[Github]
+:asciidoc-link: https://asciidoctor.org[AsciiDoc^]
+:git-remote-link: https://github.com/zeludo/zeludo.github.io[Github^]
 :html-link: https://zeludo.github.io[en ligne]
-:pdf-link: link:CV_Ludovic_RONSIN.pdf[au format pdf]
+:pdf-link: link:CV_Ludovic_RONSIN.pdf[au format pdf^]
 
 = Ludovic RONSIN
 Code avec passion depuis 2004 !
