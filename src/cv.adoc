@@ -5,10 +5,14 @@
 
 :doctype: article
 :docinfo:
+:icons: font
 
 :last-update-label: Dernière modification
 
 :toc: left
+ifdef::backend-pdf[]
+:toc: preamble
+endif::[]
 :toc-title: CV
 :toclevels: 2
 
@@ -23,11 +27,21 @@
 
 :asciidoc-link: https://asciidoctor.org[AsciiDoc]
 :git-remote-link: https://github.com/zeludo/zeludo.github.io[Github]
+:html-link: https://zeludo.github.io[en ligne]
+:pdf-link: link:CV_Ludovic_RONSIN.pdf[au format pdf]
 
 = Ludovic RONSIN
 Code avec passion depuis 2004 !
 
 Développeur pragmatique, j'aime écrire du code propre et maintenable au service du métier.
+
+ifdef::backend-pdf[]
+NOTE: Vous pouvez consulter ce CV {html-link} dans une version à jour !
+endif::[]
+
+ifdef::backend-html5[]
+NOTE: Vous pouvez télécharger le cv {pdf-link}.
+endif::[]
 
 
 == Compétences
@@ -62,7 +76,7 @@ APM             :: Dynatrace, Kibana, Grafana
 OS              :: Linux : Archlinux (perso à 100% depuis 2010, pro depuis 2017) +
                            Gentoo, Ubuntu
 
-
+<<<
 == Expériences Professionelles
 
 // [horizontal,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
