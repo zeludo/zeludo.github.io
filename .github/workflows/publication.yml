@@ -19,10 +19,12 @@ jobs:
                 with:
                     pdf_build: true
                     ebook_main_adoc_file: cv
-                    # asciidoctor_params: --attribute=nofooter
+                    # asciidoctor_params: --attribute=email="${{ secrets.EMAIL }}" --attribute=phone="${{ secrets.PHONE }}" --attribute=address="${{ secrets.ADDRESS }}" --attribute=address-link="${{ secrets.ADDRESS_LINK }}"
                     # adoc_file_ext: .ascii # default is .adoc
                     source_dir: src/ # default is .
                     # slides_build: true
-                    # pre_build:
+                    ## Le passage d'attributs contenant des espaces par une variable de la ligne de commande (Cf. asciidoctor_params)  ne fonctionne pas bien.
+                    ## Et le parsing de la CLI semble différent entre asciidoctor et asciidoctor-pdf
+                    pre_build: "echo -e '${{ secrets.SECRETS_LOCAL }}' > secrets-local.asciidoc"
                     ## PDF_FILE est utilisé par l'action pour le push sur gh-pages
                     post_build: mv cv.html index.html; PDF_FILE=CV_Ludovic_RONSIN.pdf; mv ebook.pdf "$PDF_FILE"

@@ -21,6 +21,8 @@ endif::[]
 :pdf-themesdir: theme
 :pdf-theme: pdf-theme.yml
 
+:imagesdir: images
+
 // Custom attributes
 :dd-labelwidth: 18%
 :dd-itemwidth: 82%
@@ -29,6 +31,16 @@ endif::[]
 :git-remote-link: https://github.com/zeludo/zeludo.github.io[Github^]
 :html-link: https://zeludo.github.io[en ligne]
 :pdf-link: link:CV_Ludovic_RONSIN.pdf[au format pdf^]
+include::secrets.asciidoc[]
+
+ifdef::backend-pdf[]
+:icon-size: fit=line
+endif::[]
+
+ifdef::backend-html5[]
+:icon-size: 19px
+endif::[]
+
 
 = Ludovic RONSIN
 Code avec passion depuis 2004 !
@@ -43,6 +55,14 @@ ifdef::backend-html5[]
 NOTE: Vous pouvez télécharger le cv {pdf-link}.
 endif::[]
 
+[IMPORTANT]
+.Me joindre
+====
+image:phone.svg[Téléphone,{icon-size},opts=inline] &nbsp;&nbsp; link:pass:a[tel:{phone}][{phone}^] +
+image:email.svg[Email,{icon-size},opts=inline] &nbsp;&nbsp; mailto:{email}[] +
+image:house.svg[Adresse,{icon-size},opts=inline] &nbsp;&nbsp; link:{address-link}[{address}^] +
+image:linkedin.png[LinkedIn,{icon-size},pdfwidth=80%,opts=inline] &nbsp;&nbsp; link:{linkedin-link}[LinkedIn^] +
+====
 
 == Compétences
 

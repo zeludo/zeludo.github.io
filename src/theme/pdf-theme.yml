@@ -53,6 +53,7 @@ role:
         font_style: bold_italic
     lead:
         font_size: $base_font_size_large
+
 #    line-through:
 #        text_decoration: line-through
 #    underline:
@@ -147,7 +148,12 @@ block:
 #        font_color: $heading_font_color
 #        font_size: $heading_h4_font_size
 #        font_style: $heading_font_style
-#admonition:
+admonition:
+    line_height: 1.1
+    caption:
+        font_color: $heading_font_color
+        font_size: $heading_h6_font_size
+        font_style: bold_italic
 #    column_rule_color: $base_border_color
 #    column_rule_width: $base_border_width
 #    padding: [$vertical_rhythm / 3.0, $horizontal_rhythm, $vertical_rhythm / 3.0, $horizontal_rhythm]
