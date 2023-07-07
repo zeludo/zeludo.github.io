@@ -168,19 +168,19 @@ td.hdlist1, td.hdlist2 {
     font-weight: bold;
 }
 
-
 .tech dt,
 .tech .hdlist1 {
     /*color: dimgray;*/
     font-size: 0.95em;
 }
 
+.tech,
 .tech dd p,
 .tech .hdlist2 p,
 .skills dd p,
 .skills .hdlist2 p {
-    font-family: "Noto sans mono", monospace;
-    font-size: 0.9em;
+/*    font-family: "Noto sans mono", monospace;
+    font-size: 0.9em;*/
     margin-left: 0;
     padding-left: 0;
 }
@@ -202,4 +202,10 @@ td.hdlist1, td.hdlist2 {
 .formations td.hdlist1,
 .formations td.hdlist2 {
     padding-bottom: 0.5em;
+}
+:not(pre):not([class^=L])>code {
+    font-size: 0.88em;
+    color: inherit;
+    background-color: inherit;
+    padding: 0;
 }

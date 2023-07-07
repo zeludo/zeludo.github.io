@@ -8,11 +8,12 @@ font:
             italic: GEM_FONTS_DIR/notoserif-italic-subset.ttf
             bold_italic: GEM_FONTS_DIR/notoserif-bold_italic-subset.ttf
         # M+ 1mn supports ASCII and the circled numbers used for conums
+        # Surcharge M+ 1mn par Roboto Mono
         M+ 1mn:
-            normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
-            bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
-            italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
-            bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
+            normal: RobotoMono-Regular.ttf
+            bold: RobotoMono-Bold.ttf
+            italic: RobotoMono-Italic.ttf
+            bold_italic: RobotoMono-BoldItalic.ttf
         Noto Sans:
             normal: GEM_FONTS_DIR/notosans-regular-subset.ttf
             bold: GEM_FONTS_DIR/notosans-bold-subset.ttf
@@ -45,10 +46,8 @@ base:
     border_radius: 2
 #    border_width: 0.5
 role:
-    skills:
-        font-family: M+ 1mn
     tech:
-        font-family: M+ 1mn
+        font_size: floor($base_font_size * 0.95)
     entreprise:
         font_style: bold_italic
     lead:
@@ -71,8 +70,10 @@ role:
 #link:
 #    font_color: 428BCA
 ## codespan is currently used for monospaced phrases and table cells
-#codespan:
-#    font_color: B12146
+codespan:
+    font_color: $base_font_color
+    font_size: floor($base_font_size * 0.95)
+    line_height: $base_line_height
 #    font_family: M+ 1mn
 #button:
 #    content: "[\u2009%s\u2009]"
@@ -149,7 +150,8 @@ block:
 #        font_size: $heading_h4_font_size
 #        font_style: $heading_font_style
 admonition:
-    line_height: 1.1
+    line_height: 1.25
+    font_color : 666666
     caption:
         font_color: $heading_font_color
         font_size: $heading_h6_font_size
@@ -179,12 +181,12 @@ admonition:
 #        font_size: $quote_cite_font_size
 #        font_color: $quote_cite_font_color
 ## code is used for literal, listing, and source blocks and literal table cells
-#code:
-#    font_color: $base_font_color
+code:
+    font_color: $base_font_color
 #    font_family: $codespan_font_family
-#    font_size: ceil($base_font_size)
+    font_size: $codespan_font_size
 #    padding: $code_font_size
-#    line_height: 1.25
+    line_height: $base_line_height
 #    # line_gap is an experimental property to control how a background color is applied to an inline block element
 #    line_gap: 3.8
 #    background_color: F5F5F5
@@ -211,8 +213,8 @@ sidebar:
     background_color: F5F5F5
     border_color: E5E5E5
 #    border_radius: $base_border_radius
-#    border_width: $base_border_width
-#    padding: [$vertical_rhythm, $vertical_rhythm * 1.25, $vertical_rhythm, $vertical_rhythm * 1.25]
+    border_width: 0
+    padding: [$vertical_rhythm * 0.75, $vertical_rhythm * 0.75, $vertical_rhythm * 0.75, $vertical_rhythm * 0.75]
     title:
         text_align: left
         font_color: $heading_font_color

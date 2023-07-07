@@ -20,6 +20,7 @@ endif::[]
 
 :pdf-themesdir: theme
 :pdf-theme: pdf-theme.yml
+:pdf-fontsdir: fonts;GEM_FONTS_DIR
 
 :imagesdir: images
 
@@ -67,34 +68,34 @@ image:linkedin.png[LinkedIn,{icon-size},pdfwidth=80%,opts=inline] &nbsp;&nbsp; l
 == Compétences
 
 [horizontal.skills,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
-Langages        :: Java, Groovy, TypeScript, Javascript,
-                   AsciiDocfootnote:asciidoc[Ce CV est écrit en link:{asciidoc-link}[AsciiDoc^] :)
-                   Les sources sont consultables sur link:{git-remote-link}[Github^]],
-                   PlantUML, (_Kotlin_)
-Frameworks      :: Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring Batch, +
-                   Resilience4j, Spring Retry +
-                   Swagger, +
-                   ElasticSearch, +
-                   Grails, +
-                   Http Client, Jaxrs, HttpBuilder ng +
-                   Angular, NgRx, Angularjs
-Tests           :: JUnit, Spockframework, Assertj, Mockito, Easymock
-Sécurité        :: JWT, CORS, MTLS, CSR, SAML
-Performance     :: JProfiler, JMeter, Neoload
-IDE             :: IntelliJ IDEA, Eclipse, Eclipse MAT
-Méthodologie    :: Agilité Scrum, Kanban
-Versioning      :: Git (Gitlab, Github), SVN
-Build           :: Gradle _(platform, convention plugin, test fixtures)_, +
-                   Maven _(BOM, dev d'un Plugin)_, +
-                   Npm, Webpack
-CI              :: Gitlab CI,
-                   Jenkins (Jenkinsfile),
-                   Travis CI, Nexus, Sonarqube
-Platform        :: AWS, Tomcat, Docker, JBoss, Chef
-Bases de données:: PostgreSql, DB2, Oracle, SQL Server, H2, Graphite, InfluxDB
-APM             :: Dynatrace, Kibana, Grafana
-OS              :: Linux : Archlinux (perso à 100% depuis 2010, pro depuis 2017) +
-                           Gentoo, Ubuntu
+Langages        :: `Java, Groovy, TypeScript, Javascript,
+                    AsciiDocfootnote:asciidoc[Ce CV est écrit en link:{asciidoc-link}[AsciiDoc^] :)
+                    Les sources sont consultables sur link:{git-remote-link}[Github^]],
+                    PlantUML, (_Kotlin_)`
+Frameworks      ::  `Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring Batch,` +
+                    `Resilience4j, Spring Retry` +
+                    `Swagger,` +
+                    `ElasticSearch,` +
+                    `Grails,` +
+                    `Http Client, Jaxrs, HttpBuilder ng` +
+                    `Angular, NgRx, Angularjs`
+Tests           ::  `JUnit, Spockframework, Assertj, Mockito, Easymock`
+Sécurité        ::  `JWT, CORS, MTLS, CSR, SAML`
+Performance     ::  `JProfiler, JMeter, Neoload`
+IDE             ::  `IntelliJ IDEA, Eclipse, Eclipse MAT`
+Méthodologie    ::  `Agilité Scrum, Kanban`
+Versioning      ::  `Git (Gitlab, Github), SVN`
+Build           ::  `Gradle _(platform, convention plugin, test fixtures)_,` +
+                    `Maven _(BOM, dev d'un Plugin)_,` +
+                    `Npm, Webpack`
+CI              ::  `Gitlab CI,
+                    Jenkins (Jenkinsfile),
+                    Travis CI, Nexus, Sonarqube`
+Platform        ::  `AWS, Tomcat, Docker, JBoss, Chef`
+Bases de données::  `PostgreSql, DB2, Oracle, SQL Server, H2, Graphite, InfluxDB`
+APM             ::  `Dynatrace, Kibana, Grafana`
+OS              ::  `Archlinux (perso à 100% depuis 2010, pro depuis 2017),` +
+                    `Gentoo, Ubuntu`
 
 <<<
 == Expériences Professionelles
@@ -168,7 +169,7 @@ Refonte de l'espace adhésion pour permettre plus de flexibilité métier. +
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique :::
-Groovy, Java, Spring Boot, Gradle, Swagger (Springfox), Asciidoc, Spockframework, Quartz Scheduler
+`Groovy, Java, Spring Boot, Gradle, Swagger (Springfox), Asciidoc, Spockframework, Quartz Scheduler`
 **********
 
 
@@ -195,9 +196,9 @@ API pour l'intégration avec les partenaires (CRM, comparateurs internets, ...) 
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique :::
-* Groovy, Java, Spring Boot (Actuator), Spring Security, Hibernate, Gradle, ehcache, Swagger (Springfox), Asciidoc, Spockframework
-* DB2, H2, ElasticSearch
-* TypeScript, Angular, NgRx, Karma, Jasmine, Npm
+* `Groovy, Java, Spring Boot (Actuator), Spring Security, Hibernate, Gradle, ehcache, Swagger (Springfox), Asciidoc, Spockframework`
+* `DB2, H2, ElasticSearch`
+* `TypeScript, Angular, NgRx, Karma, Jasmine, Npm`
 **********
 
 
@@ -210,7 +211,7 @@ API de génération de documents PDF.
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique :::
-Java, Spring MVC, JSP, Flyingsaucer, Jetty, AWS
+`Java, Spring MVC, JSP, Flyingsaucer, Jetty, AWS`
 **********
 
 
@@ -229,10 +230,10 @@ Les applications sont composées de backend et frontend qui communiquent en REST
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique :::
-* Groovy, Grails, Gorm, Gpars, Spring Security Rest, JWT, Liquibase, HttpBuilder, Spockframework, Quartz Scheduler
-* Javascript, Angularjs, Grunt, Bower, Karma, Jasmine, Npm
-* PostgreSql, H2
-* AWS / Clever Cloud, Travis CI
+* `Groovy, Grails, Gorm, Gpars, Spring Security Rest, JWT, Liquibase, HttpBuilder, Spockframework, Quartz Scheduler`
+* `Javascript, Angularjs, Grunt, Bower, Karma, Jasmine, Npm`
+* `PostgreSql, H2`
+* `AWS / Clever Cloud, Travis CI`
 **********
 
 
@@ -245,7 +246,7 @@ Portail de connexion aux applications pour les partenaires. +
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique :::
-Java, Spring Security SAML, Apache Camel, Shibboleth IdP
+`Java, Spring Security SAML, Apache Camel, Shibboleth IdP`
 **********
 
 
@@ -257,7 +258,8 @@ Batches comptables de calcul des commissions
 * Mise en place de files de messages MQ Series consommées en JMS
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
-Env. technique ::: Java, Spring Batch, Spring JMS, MQ Series
+Env. technique :::
+`Java, Spring Batch, Spring JMS, MQ Series`
 **********
 
 --
@@ -280,7 +282,8 @@ Fév. 2010 - Jan 2014::
 * Tests end to end
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
-Env. technique ::: Java, Spring, Hibernate, Apache POI, Junit, AssertJ
+Env. technique :::
+`Java, Spring, Hibernate, Apache POI, Junit, AssertJ`
 **********
 
 .Sésame v4
@@ -289,7 +292,8 @@ Env. technique ::: Java, Spring, Hibernate, Apache POI, Junit, AssertJ
 Intégration d'un nouveau distributeur sur le front-office de vente d'assurance emprunteur.
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
-Env. technique ::: Java, Spring, GWT
+Env. technique :::
+`Java, Spring, GWT`
 **********
 
 
@@ -302,7 +306,8 @@ Module SSO pour authentification des partenaires basé sur Atlassian Crowd :
 * Application d'administration des comptes
 
 [horizontal.tech,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
-Env. technique ::: Java, Spring, GWT, Atlassian Crowd, Fitnesse
+Env. technique :::
+`Java, Spring, GWT, Atlassian Crowd, Fitnesse`
 **********
 
 ****
@@ -312,7 +317,6 @@ Jui. 2009 - Fév. 2010::
 [.entreprise]_SQLI_::
 +
 ****
-[horizontal,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 [.client]*Satori*
 [.lieu]_Couëron, 44_ +
 [.poste]*Ingénieur de conception et développement .Net*
@@ -333,8 +337,8 @@ contrôle d'accès, ...
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique:::
-*.Net 3.5* : C#, WCF, WinForm, ASP.NET, Compact Framework, Web Services +
-IIS 6, SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System
+`*.Net 3.5* : C#, WCF, WinForm, ASP.NET, Compact Framework, Web Services` +
+`IIS 6, SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System`
 ****
 
 Mars 2008 - Juin 2009::
@@ -358,7 +362,7 @@ Développement de nouvelles fonctionnalités et intégration à l’existant sur
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique:::
-Java EE 6, Hibernate, JUnit, DBUnit, Oracle 10, Eclipse
+`Java EE 6, Hibernate, JUnit, DBUnit, Oracle 10, Eclipse`
 ****
 
 Déc. 2006 - Mars 2008::
@@ -386,8 +390,8 @@ contrôle d'accès, ...
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique:::
-* .Net 2.0 : C#2.0, WinForm, ASP.NET, Compact Framework, Web Services +
-* IIS 6 SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System
+* `.Net 2.0 : C#2.0, WinForm, ASP.NET, Compact Framework, Web Services` +
+* `IIS 6 SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System`
 
 ****
 
@@ -412,8 +416,8 @@ Les données recueillies constituent un dossier qui permet de faciliter l'évalu
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique:::
-.Net 2.0 : C#2.0, WinForms, Custom Controls, TCP, Services Windows, Remoting, Serialization, Data Set, API Windows +
-SQL Server 2000, Visual Studio 2005, *SSL* 3 (AES 256), *Hash MD5*, XML
+`.Net 2.0 : C#2.0, WinForms, Custom Controls, TCP, Services Windows, Remoting, Serialization, Data Set, API Windows` +
+`SQL Server 2000, Visual Studio 2005, *SSL* 3 (AES 256), *Hash MD5*, XML`
 
 ****
 
@@ -430,9 +434,9 @@ Mar. 2005 - Sept. 2005::
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique:::
-* Java J2ME : J2ME Polish, Bluetooth, HTTP, *AES*, MD5 +
-* 1.NET CF 2.0 : C#, *Bluetooth* +
-* Java J2EE, Struts, Hibernate, MySQL
+* `Java J2ME : J2ME Polish, Bluetooth, HTTP, *AES*, MD5` +
+* `.NET CF 2.0 : C#, *Bluetooth*` +
+* `Java J2EE, Struts, Hibernate, MySQL`
 
 ****
 
@@ -453,7 +457,7 @@ Application de consultation d’informations bancaires sur Smartphone.
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique:::
-Java J2ME sous NetBean, HTTPS, J2ME Polish (GUI)
+`Java J2ME sous NetBean, HTTPS, J2ME Polish (GUI)`
 
 ****
 
@@ -475,7 +479,7 @@ Maintenance et évolution d’un logiciel de gestion d’un magasin de matériel
 
 [horizontal.tech, labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Env. technique:::
-VBA Access 2003 (Interface), SQL Server 2000
+`VBA Access 2003 (Interface), SQL Server 2000`
 
 ****
 
