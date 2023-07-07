@@ -27,10 +27,10 @@ endif::[]
 :dd-labelwidth: 18%
 :dd-itemwidth: 82%
 
-:asciidoc-link: https://asciidoctor.org[AsciiDoc^]
-:git-remote-link: https://github.com/zeludo/zeludo.github.io[Github^]
-:html-link: https://zeludo.github.io[en ligne]
-:pdf-link: link:CV_Ludovic_RONSIN.pdf[au format pdf^]
+:asciidoc-link: https://asciidoctor.org
+:git-remote-link: https://github.com/zeludo/zeludo.github.io
+:html-link: https://zeludo.github.io
+:pdf-link: CV_Ludovic_RONSIN.pdf
 include::secrets.asciidoc[]
 
 ifdef::backend-pdf[]
@@ -48,11 +48,11 @@ Code avec passion depuis 2004 !
 Développeur pragmatique, j'aime écrire du code propre et maintenable au service du métier.
 
 ifdef::backend-pdf[]
-NOTE: Vous pouvez consulter ce CV {html-link} dans une version à jour !
+NOTE: Vous pouvez consulter mon CV link:{html-link}[en ligne] dans une version à jour et responsive !
 endif::[]
 
 ifdef::backend-html5[]
-NOTE: Vous pouvez télécharger le cv {pdf-link}.
+NOTE: Vous pouvez télécharger mon cv link:{pdf-link}[au format pdf^].
 endif::[]
 
 [IMPORTANT]
@@ -68,8 +68,8 @@ image:linkedin.png[LinkedIn,{icon-size},pdfwidth=80%,opts=inline] &nbsp;&nbsp; l
 
 [horizontal.skills,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Langages        :: Java, Groovy, TypeScript, Javascript,
-                   AsciiDocfootnote:asciidoc[Ce CV est écrit en {asciidoc-link} :)
-                   Les sources sont consultables sur {git-remote-link}],
+                   AsciiDocfootnote:asciidoc[Ce CV est écrit en link:{asciidoc-link}[AsciiDoc^] :)
+                   Les sources sont consultables sur link:{git-remote-link}[Github^]],
                    PlantUML, (_Kotlin_)
 Frameworks      :: Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring Batch, +
                    Resilience4j, Spring Retry +
