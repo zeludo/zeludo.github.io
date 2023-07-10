@@ -27,4 +27,4 @@ jobs:
                     ## Et le parsing de la CLI semble différent entre asciidoctor et asciidoctor-pdf
                     pre_build: "echo -e '${{ secrets.SECRETS_LOCAL }}' > secrets-local.asciidoc"
                     ## PDF_FILE est utilisé par l'action pour le push sur gh-pages
-                    post_build: mv cv.html index.html; PDF_FILE=CV_Ludovic_RONSIN.pdf; mv ebook.pdf "$PDF_FILE"
+                    post_build: mv cv.html index.html; PDF_FILE=CV_Ludovic_Ronsin.pdf; mv ebook.pdf "$PDF_FILE"

@@ -1,7 +1,7 @@
-:title: Ludovic RONSIN
-:description: CV de Ludovic RONSIN, développeur depuis 2004
+:title: Ludovic Ronsin
+:description: CV de Ludovic Ronsin, développeur depuis 2004
 :lang: fr
-:keywords: Ludovic RONSIN, CV
+:keywords: Ludovic Ronsin, développeur, CV, Curriculum Vitae
 
 :doctype: article
 :docinfo:
@@ -13,7 +13,7 @@
 ifdef::backend-pdf[]
 :toc: preamble
 endif::[]
-:toc-title: CV
+:toc-title:
 :toclevels: 2
 
 :stylesheet: theme/html-theme.css
@@ -31,7 +31,7 @@ endif::[]
 :asciidoc-link: https://asciidoctor.org
 :git-remote-link: https://github.com/zeludo/zeludo.github.io
 :html-link: https://zeludo.github.io
-:pdf-link: CV_Ludovic_RONSIN.pdf
+:pdf-link: CV_Ludovic_Ronsin.pdf
 include::secrets.asciidoc[]
 
 ifdef::backend-pdf[]
@@ -43,7 +43,7 @@ ifdef::backend-html5[]
 endif::[]
 
 
-= Ludovic RONSIN
+= Ludovic Ronsin
 Code avec passion depuis 2004 !
 
 Développeur pragmatique, j'aime écrire du code propre et maintenable au service du métier.
@@ -511,17 +511,17 @@ BreizhCamp      :: 2015
 
 [horizontal.formations,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 2002 - 2004 ::
-    Licence et Maîtrise GEII _(Génie Électrique et Informatique Industrielle)_
+    Licence et Maîtrise GEII _(Génie Électrique et Informatique Industrielle)_ +
     [.small]+option Ingénierie des circuits et des systèmes+ +
     _IUP de Lorient (56)_
 
 2001 - 2002 ::
-    DUT GEII
+    DUT GEII +
     [.small]+option Réseaux Locaux Industriels+ +
     _IUT de Lannion (22)_
 
 2000 ::
-    Baccalauréat série Scientifique
+    Baccalauréat série Scientifique +
     [.small]+option Technologie Industrielle+ +
     _Lycée La Mennais à Ploërmel (56)_
 
@@ -531,7 +531,7 @@ BreizhCamp      :: 2015
 [horizontal.formations,labelwidth={dd-labelwidth},itemwidth={dd-itemwidth}]
 Anglais ::
     Courant +
-    TOEIC (2002) : 820/995 +
+    TOEIC [.small]_(2002)_ : 820/995 +
     Séjour de 3 mois à Cardiff (UK) en 2003
 Allemand ::
     Scolaire
