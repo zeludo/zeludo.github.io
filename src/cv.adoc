@@ -49,20 +49,20 @@ Code avec passion depuis 2004 !
 Développeur pragmatique, j'aime écrire du code propre et maintenable au service du métier.
 
 ifdef::backend-pdf[]
-NOTE: Vous pouvez consulter mon CV link:{html-link}[en ligne] dans une version à jour et responsive !
+TIP: Vous pouvez consulter mon CV link:{html-link}[en ligne] dans une version à jour et responsive !
 endif::[]
 
 ifdef::backend-html5[]
-NOTE: Vous pouvez télécharger mon cv link:{pdf-link}[au format pdf^].
+TIP: Vous pouvez télécharger mon cv link:{pdf-link}[au format pdf^].
 endif::[]
 
-[IMPORTANT]
-.Me joindre
+[NOTE]
 ====
 image:phone.svg[Téléphone,{icon-size},opts=inline] &nbsp;&nbsp; link:pass:a[tel:{phone}][{phone}^] +
 image:email.svg[Email,{icon-size},opts=inline] &nbsp;&nbsp; mailto:{email}[] +
 image:house.svg[Adresse,{icon-size},opts=inline] &nbsp;&nbsp; link:{address-link}[{address}^] +
 image:linkedin.png[LinkedIn,{icon-size},pdfwidth=80%,opts=inline] &nbsp;&nbsp; link:{linkedin-link}[LinkedIn^] +
+image:stackexchange.svg[LinkedIn,{icon-size},pdfwidth=80%,opts=inline] &nbsp;&nbsp; link:{stackexchange-link}[Stack Exchange^] [.small]_(Stack Overflow, etc)_ +
 ====
 
 == Compétences
