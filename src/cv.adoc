@@ -36,6 +36,7 @@ include::secrets.asciidoc[]
 
 ifdef::backend-pdf[]
 :icon-size: fit=line
+:compress:
 endif::[]
 
 ifdef::backend-html5[]
