@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="description" content="CV de Ludovic Ronsin, développeur depuis 2004">
+<meta name="keywords" content="Ludovic Ronsin, développeur, CV, Curriculum Vitae">
+<meta name="author" content="Code avec passion depuis 2004 !">
+<title>Ludovic Ronsin</title>
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+
+/*@import url(https://raw.githubusercontent.com/darshandsoni/asciidoctor-skins/gh-pages/css/material-blue.css);*/
+
+body {
+    /*transform-origin: center 0;
+    transform: scale(0.85)*/
+}
+
+#author {
+    font-style: italic;
+}
+
+dl {
+    padding: 0 0.5em;
+}
+dl dt {
+    float: left;
+    clear: left;
+    padding:  0 0.25em;
+    margin: 0 1em 0 0;
+    background:rgba(0,0,0,.78);
+    color:white;
+    width: 18%;
+    min-width: 195px;
+}
+dl dd {
+    padding: 0 0 0 0%;
+    margin: 0 0 0 0em;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+    body.toc2 {
+        padding: 0;
+    }
+    #toc.toc2 {
+        position: relative;
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    body.toc2 {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+    body {
+        margin: 0;
+        /*transform: scale(1);*/
+    }
+    #toc.toc2 {
+        margin-top: 0 !important;
+        background: #f8f8f7;
+        position: fixed;
+        width: 16em;
+        left: 0;
+        top: 0;
+        border: 1px solid #e7e7e9;
+        border-right: 1px solid #e7e7e9;
+        border-top-width: 1px !important;
+        border-bottom-width: 1px !important;
+        z-index: 1000;
+        padding: 8.6em 1.25em 1em 1.25em;
+        height: 100%;
+        overflow: auto;
+    }
+    ##header, #content, #footnotes, #footer  {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    #content #toc {
+        padding-top: 6em;
+    }
+    body.toc2 {
+        padding-left: 16em;
+    }
+    /* Description list en colonne */
+    dl {
+        padding: 0 0.5em;
+    }
+    dl dt {
+        float: left;
+        clear: left;
+    }
+    dl dd {
+        padding: 0 0 0 18%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body.toc2 {
+        padding-left: 20em;
+    }
+    #toc.toc2 {
+        width: 20em;
+    }
+
+}
+
+@media screen and (min-width: 1921px) {
+    body.toc2 {
+        padding-left: 28em;
+    }
+    #toc.toc2 {
+        width: 28em;
+    }
+}
+
+#header, #content, #footnotes, #footer {
+    max-width: 1200px;/*Equiv. à 75em à 16px. Défaut 62.5em à 16px*/
+    min-width: 560px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+h1, h2, p, td.content, span.alt, summary {
+    letter-spacing: 0em;
+}
+
+.openblock > .title + .content > .sidebarblock:first-child {
+    margin-top: 1.25em;
+}
+.openblock > .title + .content > .sidebarblock {
+    margin-bottom: 0em;
+}
+
+
+li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .olist .ulis {
+    margin-bottom: 0.40em; /*0.625em*/
+}
+
+.hdlist > table {
+    width: 100%;
+}
+
+td.hdlist1, td.hdlist2 {
+    padding-bottom: 2em;
+}
+
+.client {
+    font-size: 1.1em
+}
+
+.sidebarblock {
+    background: #f9f9f8;
+    border: none;
+    border-radius: 8px;
+    padding-top: 0.1em;
+    /*padding-bottom: 0em;*/
+}
+.sidebarblock .sidebarblock .content {
+    border-bottom: dimgrey solid 1px;
+}
+.sidebarblock .sidebarblock:last-child .content  {
+    border-bottom: none;
+}
+
+.sidebarblock > .content > .title {
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    font-family: "Noto Serif","DejaVu Serif",serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tech dt,
+.tech .hdlist1 {
+    /*color: dimgray;*/
+    font-size: 0.95em;
+}
+
+.tech,
+.tech dd p,
+.tech .hdlist2 p,
+.skills dd p,
+.skills .hdlist2 p {
+/*    font-family: "Noto sans mono", monospace;
+    font-size: 0.9em;*/
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.skills dd p,
+.skills .hdlist2 p,
+.formations dd p,
+.formations .hdlist2 p {
+    margin-bottom: 0em;
+}
+
+.tech td.hdlist1,
+.tech td.hdlist2,
+.skills td.hdlist1,
+.skills td.hdlist2 {
+    padding-bottom: 0.5em;
+}
+
+.formations td.hdlist1,
+.formations td.hdlist2 {
+    padding-bottom: 0.5em;
+}
+:not(pre):not([class^=L])>code {
+    font-size: 0.88em;
+    color: inherit;
+    background-color: inherit;
+    padding: 0;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=0.65"/>
+<meta name="google-site-verification" content="LvvWtU72f98hVwIpADNicjrLsKq44YeTwyeLvNyOFo0" />
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Ludovic Ronsin</h1>
+<div class="details">
+<span id="author" class="author">Code avec passion depuis 2004 !</span><br>
+<span id="email" class="email"><a href="mailto:ludo.ronsin@gmail.com">ludo.ronsin@gmail.com</a></span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#_compétences">Compétences</a></li>
+<li><a href="#_expériences_professionelles">Expériences Professionelles</a></li>
+<li><a href="#_formations">Formations</a>
+<ul class="sectlevel2">
+<li><a href="#_professionnelles">Professionnelles</a></li>
+<li><a href="#_conférences">Conférences</a></li>
+<li><a href="#_scolaires">Scolaires</a></li>
+</ul>
+</li>
+<li><a href="#_langues">Langues</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Développeur pragmatique, j&#8217;aime écrire du code propre et maintenable au service du métier.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Vous pouvez télécharger mon cv <a href="CV_Ludovic_Ronsin.pdf" target="_blank" rel="noopener">au format pdf</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><span class="image"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="19px">
+<title>Téléphone</title>
+<path d="M2.00589 4.54166C1.905 3.11236 3.11531 2 4.54522 2H7.60606C8.34006 2 9.00207 2.44226 9.28438 3.1212L10.5643 6.19946C10.8761 6.94932 10.6548 7.81544 10.0218 8.32292L9.22394 8.96254C8.86788 9.24798 8.74683 9.74018 8.95794 10.1448C10.0429 12.2241 11.6464 13.9888 13.5964 15.2667C14.008 15.5364 14.5517 15.4291 14.8588 15.0445L15.6902 14.003C16.1966 13.3687 17.0609 13.147 17.8092 13.4594L20.8811 14.742C21.5587 15.0249 22 15.6883 22 16.4238V19.5C22 20.9329 20.8489 22.0955 19.4226 21.9941C10.3021 21.3452 2.65247 13.7017 2.00589 4.54166Z" fill="#000000"/>
+</svg></span> &nbsp;&nbsp; <a href="tel:06 83 47 12 48" target="_blank" rel="noopener">06 83 47 12 48</a><br>
+<span class="image"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="19px">
+<title>e-mail</title>
+<path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3" y="5" width="18" height="14" rx="2" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+</svg></span> &nbsp;&nbsp; <a href="mailto:ludo.ronsin@gmail.com">ludo.ronsin@gmail.com</a><br>
+<span class="image"><svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" width="19px">
+<title>Adresse</title>
+<path d="M0 16h4l12-13.696 12 13.696h4l-13.984-16h-4zM4 32h8v-9.984q0-0.832 0.576-1.408t1.44-0.608h4q0.8 0 1.408 0.608t0.576 1.408v9.984h8v-13.408l-12-13.248-12 13.248v13.408zM26.016 6.112l4 4.576v-8.672h-4v4.096z"></path>
+</svg></span> &nbsp;&nbsp; <a href="https://www.qwant.com/maps/place/admin:osm:relation:68343" target="_blank" rel="noopener">Bouaye (44830)</a><br>
+<span class="image"><img src="images/linkedin.png" alt="LinkedIn" width="19px"></span> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/ludovic-ronsin-49a66624a" target="_blank" rel="noopener">LinkedIn</a><br>
+<span class="image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="19px"><style>.st0{fill:#376db6}.st1{fill:#4ca2da}.st2{fill:#91d8f4}.st3{fill:#1e5397}</style><path class="st0" d="M22.4 57.5h74.8v15.4H22.4z"/><path class="st1" d="M22.4 37.6h74.8V53H22.4z"/><path class="st2" d="M85.5 17H34.4c-6.6 0-12 5.5-12 12.3v4h74.8v-4C97.2 22.5 92 17 85.5 17z"/><path class="st3" d="M22.4 77.3v4c0 6.8 5.4 12.3 12 12.3h32v16.3l15.8-16.3h3.5c6.6 0 12-5.5 12-12.3v-4H22.4z"/></svg></span> &nbsp;&nbsp; <a href="https://stackexchange.com/users/3975927/ludovic-ronsin?tab=accounts" target="_blank" rel="noopener">Stack Exchange</a> <em class="small">(Stack Overflow, etc)</em><br></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compétences">Compétences</h2>
+<div class="sectionbody">
+<div class="hdlist skills">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Langages        
+</td>
+<td class="hdlist2">
+<p><code>Java, Groovy, TypeScript, Javascript,
+AsciiDoc<sup class="footnote" id="_footnote_asciidoc">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>,
+PlantUML, (<em>Kotlin</em>)</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Frameworks      
+</td>
+<td class="hdlist2">
+<p><code>Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring Batch,</code><br>
+<code>Resilience4j, Spring Retry</code><br>
+<code>Swagger,</code><br>
+<code>ElasticSearch,</code><br>
+<code>Grails,</code><br>
+<code>Http Client, Jaxrs, HttpBuilder ng</code><br>
+<code>Angular, NgRx, Angularjs</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Tests           
+</td>
+<td class="hdlist2">
+<p><code>JUnit, Spockframework, Assertj, Mockito, Easymock</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Sécurité        
+</td>
+<td class="hdlist2">
+<p><code>JWT, CORS, MTLS, CSR, SAML</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Performance     
+</td>
+<td class="hdlist2">
+<p><code>JProfiler, JMeter, Neoload</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+IDE             
+</td>
+<td class="hdlist2">
+<p><code>IntelliJ IDEA, Eclipse, Eclipse MAT</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Méthodologie    
+</td>
+<td class="hdlist2">
+<p><code>Agilité Scrum, Kanban</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Versioning      
+</td>
+<td class="hdlist2">
+<p><code>Git (Gitlab, Github), SVN</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Build           
+</td>
+<td class="hdlist2">
+<p><code>Gradle <em>(platform, convention plugin, test fixtures)</em>,</code><br>
+<code>Maven <em>(BOM, dev d&#8217;un Plugin)</em>,</code><br>
+<code>Npm, Webpack</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+CI              
+</td>
+<td class="hdlist2">
+<p><code>Gitlab CI,
+Jenkins (Jenkinsfile),
+Travis CI, Nexus, Sonarqube</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Platform        
+</td>
+<td class="hdlist2">
+<p><code>AWS, Tomcat, Docker, JBoss, Chef</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Bases de données
+</td>
+<td class="hdlist2">
+<p><code>PostgreSql, DB2, Oracle, SQL Server, H2, Graphite, InfluxDB</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+APM             
+</td>
+<td class="hdlist2">
+<p><code>Dynatrace, Kibana, Grafana</code></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+OS              
+</td>
+<td class="hdlist2">
+<p><code>Archlinux (perso à 100% depuis 2010, pro depuis 2017),</code><br>
+<code>Gentoo, Ubuntu</code></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_expériences_professionelles">Expériences Professionelles</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Jan. 2014 - Jui. 2023</dt>
+<dt class="hdlist1"><em class="entreprise">Kereis / cbp</em></dt>
+<dd>
+<div id="sectiontest" class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">Kereis / cbp</strong>
+<em class="lieu">St Herblain, 44</em><br>
+<strong class="poste">Architecte IT</strong></p>
+</div>
+<div class="paragraph">
+<p>Développeur puis Architecte (depuis 2017) au sein d&#8217;une équipe qui a évoluée de 10 à plus de 30 personnes.<br>
+Fonctionnement en Agilité : Scrum / Kanban.<br>
+Le périmètre fonctionnel est composé d&#8217;applications de</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>vente d&#8217;assurance emprunteur pour banquiers et courtiers</p>
+</li>
+<li>
+<p>back-office pour les gestionnaires cbp</p>
+</li>
+<li>
+<p>d&#8217;espace adhésion pour les postulants</p>
+</li>
+<li>
+<p>back-office assureur</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>L&#8217;ensemble se répartit en 35 repositories Git : Applications, Librairies, Services, Outils</p>
+</div>
+<div class="openblock">
+<div class="title"><strong>Activités transverses :</strong></div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Roadmap technique :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Définition de la cible ainsi que la trajectoire nécessaire au désendettement de la base de code historique tout en continuant de la faire évoluer</p>
+</li>
+<li>
+<p>Étude sur les caches distribués</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Pilotage d&#8217;une équipe (3 pers) dédiée aux chantiers techniques</p>
+</li>
+<li>
+<p>Accompagnement des devs : Revues de code, peer programming</p>
+</li>
+<li>
+<p>Organisation des audits de sécurité (pentests), prise en compte des retours et corrections des vulnérabilités</p>
+</li>
+<li>
+<p>Recrutements de développeurs</p>
+</li>
+<li>
+<p>Organisation de l&#8217;équipe</p>
+</li>
+<li>
+<p>Membre des communautés : Sécurité, Dev &amp; Archi, CI</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title"><strong>Contributions particulières :</strong></div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Résilience : retry et timeout sur les clients HTTP, circuit-breaker</p>
+</li>
+<li>
+<p>Corrélation des logs (traçabilité) entre applications (brave)</p>
+</li>
+<li>
+<p>Maven BOM interne à l&#8217;équipe pour améliorer la gestion des dépendances</p>
+</li>
+<li>
+<p>Pipeline Jenkins (Jenkinsfile) pour chaîner les builds des libs et applications</p>
+</li>
+<li>
+<p>Migrations de JBoss / Windows vers Tomcat / Linux</p>
+</li>
+<li>
+<p>Migrations SVN &#8594; Git (svn-all-fast-export),</p>
+</li>
+<li>
+<p>Optimisations de pool JDBC</p>
+</li>
+<li>
+<p>Pooling de connexions HTTP sortantes, monitoring via Graphite / Grafana</p>
+</li>
+<li>
+<p>Optimisations de performances (JProfiler)</p>
+</li>
+<li>
+<p>Corrections de fuites mémoires, analyses de heapdump</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title"><strong>Principaux projets</strong></div>
+<div class="content">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Espace Adhésion v2</div>
+<div class="paragraph">
+<p>Refonte de l&#8217;espace adhésion pour permettre plus de flexibilité métier.<br>
+Évolution de la stack du front-office de vente afin qu&#8217;elle devienne une base pour 2 autres applications :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Mono repo Git hébergeant les 3 applications</p>
+</li>
+<li>
+<p>Build Gradle multi-modules (platform, plugin convention, test fixtures)</p>
+</li>
+<li>
+<p>Plateforme technique commune configurable</p>
+</li>
+<li>
+<p>Partage d&#8217;API REST métiers entre les applications :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Découpage de l&#8217;API métier en modules (libs) facilement réutilisables</p>
+</li>
+<li>
+<p>Utilisation de l'<strong>autoconfiguration Spring Boot</strong> pour adapter aux besoins spécifiques des applications</p>
+</li>
+<li>
+<p>Définition des services exposés et de leurs habilitations par application</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<p><code>Groovy, Java, Spring Boot, Gradle, Swagger (Springfox), Asciidoc, Spockframework, Quartz Scheduler</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Sésame v5</div>
+<div class="paragraph">
+<p>Application de vente d&#8217;assurance emprunteur destinée à des conseillers bancaires / courtiers.<br>
+API pour l&#8217;intégration avec les partenaires (CRM, comparateurs internets, &#8230;&#8203;)<br></p>
+</div>
+<div class="paragraph">
+<p><strong>Backend</strong> : API REST en Spring Boot</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>API interne métier, qui masque la complexité du modèle métier legacy</p>
+</li>
+<li>
+<p>API à destination des partenaires</p>
+</li>
+<li>
+<p>Documentation HTML de l&#8217;api générée et exposée par l&#8217;application</p>
+</li>
+<li>
+<p>Annotations customs de validation, gestion des habilitations</p>
+</li>
+<li>
+<p>Sécurité :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CORS, Content Security Policy</p>
+</li>
+<li>
+<p>Validation stricte des entrées, nettoyage AntiSamy</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Réflexion sur l&#8217;UX</p>
+</li>
+<li>
+<p>Accompagnement des partenaires</p>
+</li>
+<li>
+<p>Définition de stratégies de migration</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Frontend</strong> : Angular, Store NgRx (<strong>programmation réactive</strong>)</p>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p><code>Groovy, Java, Spring Boot (Actuator), Spring Security, Hibernate, Gradle, ehcache, Swagger (Springfox), Asciidoc, Spockframework</code></p>
+</li>
+<li>
+<p><code>DB2, H2, ElasticSearch</code></p>
+</li>
+<li>
+<p><code>TypeScript, Angular, NgRx, Karma, Jasmine, Npm</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Edition</div>
+<div class="paragraph">
+<p>API de génération de documents PDF.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Conversion HTML en PDF</p>
+</li>
+<li>
+<p>Tag customs pour permettre ue meilleure réusabilité des JSP</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<p><code>Java, Spring MVC, JSP, Flyingsaucer, Jetty, AWS</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Espace Adhésion / Questionnaire de Santé</div>
+<div class="paragraph">
+<p>Espace à destination des postulants, leur permettant de remplir leur questionnaire de santé et signer numériquement (Docaposte) leurs documents d&#8217;adhésion.<br>
+Les applications sont composées de backend et frontend qui communiquent en REST.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sécurité :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Appel de services REST avec authentification MTLS</p>
+</li>
+<li>
+<p>Pull Request sur la lib grails spring security pour corriger une faille sur la gestion des tokens JWT</p>
+</li>
+<li>
+<p>hébergement HADS pour les données médicales</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Planification de tâches : Relances postulants, Rattrapage des erreurs / indisponibilités des services externes.</p>
+</li>
+<li>
+<p>Programmation paralléle</p>
+</li>
+<li>
+<p>Envoi de SMS</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p><code>Groovy, Grails, Gorm, Gpars, Spring Security Rest, JWT, Liquibase, HttpBuilder, Spockframework, Quartz Scheduler</code></p>
+</li>
+<li>
+<p><code>Javascript, Angularjs, Grunt, Bower, Karma, Jasmine, Npm</code></p>
+</li>
+<li>
+<p><code>PostgreSql, H2</code></p>
+</li>
+<li>
+<p><code>AWS / Clever Cloud, Travis CI</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Portail partenaire</div>
+<div class="paragraph">
+<p>Portail de connexion aux applications pour les partenaires.<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ajout de la possibilité de se connecter en <strong>SAML 2</strong>.</p>
+</li>
+<li>
+<p>Gestion de l&#8217;authentification et routage des flux aux applications</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<p><code>Java, Spring Security SAML, Apache Camel, Shibboleth IdP</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Gestion des commissions</div>
+<div class="paragraph">
+<p>Batches comptables de calcul des commissions</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Optimisation de batches</p>
+</li>
+<li>
+<p>Mise en place de files de messages MQ Series consommées en JMS</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<p><code>Java, Spring Batch, Spring JMS, MQ Series</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Fév. 2010 - Jan 2014</dt>
+<dt class="hdlist1"><em class="entreprise">SQLI</em></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">Cbp</strong>
+<em class="lieu">St Herblain, 44</em><br>
+<strong class="poste">Ingénieur de conception et développement</strong></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Tarification</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Refonte du moteur de tarification de manière modulaire et extensible, afin de simplifier l&#8217;intégration de nouveaux produits.</p>
+</li>
+<li>
+<p>Migrations des anciens produits</p>
+</li>
+<li>
+<p>Import de grille de tarif par fichier MS Excel</p>
+</li>
+<li>
+<p>Tests end to end</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<p><code>Java, Spring, Hibernate, Apache POI, Junit, AssertJ</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Sésame v4</div>
+<div class="paragraph">
+<p>Intégration d&#8217;un nouveau distributeur sur le front-office de vente d&#8217;assurance emprunteur.</p>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<p><code>Java, Spring, GWT</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Clavis</div>
+<div class="paragraph">
+<p>Module SSO pour authentification des partenaires basé sur Atlassian Crowd :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Filtre de servlet de validation de l&#8217;authentification</p>
+</li>
+<li>
+<p>Mire de login</p>
+</li>
+<li>
+<p>Application d&#8217;administration des comptes</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique 
+</td>
+<td class="hdlist2">
+<p><code>Java, Spring, GWT, Atlassian Crowd, Fitnesse</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Jui. 2009 - Fév. 2010</dt>
+<dt class="hdlist1"><em class="entreprise">SQLI</em></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">Satori</strong>
+<em class="lieu">Couëron, 44</em><br>
+<strong class="poste">Ingénieur de conception et développement .Net</strong></p>
+</div>
+<div class="paragraph">
+<p>Projet en régie. Équipe de 8 personnes.<br>
+Corrections d&#8217;anomalies et réalisation d&#8217;évolutions sur une solution complète de gestion de billetterie et boutique :
+Programmation,
+vente (caisse, web, bornes tactiles),
+édition de billets (papier, numérique),
+gestion client,
+contrôle d&#8217;accès, &#8230;&#8203;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Chiffrages</p>
+</li>
+<li>
+<p>Spécifications fonctionnelles</p>
+</li>
+<li>
+<p>Conceptions techniques</p>
+</li>
+<li>
+<p>Développements</p>
+</li>
+<li>
+<p>Tests</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique
+</td>
+<td class="hdlist2">
+<p><code><strong>.Net 3.5</strong> : C#, WCF, WinForm, ASP.NET, Compact Framework, Web Services</code><br>
+<code>IIS 6, SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Mars 2008 - Juin 2009</dt>
+<dt class="hdlist1"><em class="entreprise">SQLI</em></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">Civitas (Cegid)</strong>
+<em class="lieu">Nantes, 44</em><br>
+<strong class="poste">Ingénieur de conception et développement J2EE</strong><br></p>
+</div>
+<div class="paragraph">
+<p>Projet en régie. Équipe de 5 à 15 personnes.</p>
+</div>
+<div class="paragraph">
+<p>Développement de nouvelles fonctionnalités et intégration à l’existant sur une application web de gestion financière pour les collectivités locales et les établissements publics.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Chiffrages</p>
+</li>
+<li>
+<p>Spécifications fonctionnelles</p>
+</li>
+<li>
+<p>Mise en place de process techniques</p>
+</li>
+<li>
+<p>Conception technique</p>
+</li>
+<li>
+<p>Développements</p>
+</li>
+<li>
+<p>Modification du Framework Civitas et formation des développeurs</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique
+</td>
+<td class="hdlist2">
+<p><code>Java EE 6, Hibernate, JUnit, DBUnit, Oracle 10, Eclipse</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Déc. 2006 - Mars 2008</dt>
+<dt class="hdlist1"><em class="entreprise">SQLI</em></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">Satori</strong>
+<em class="lieu">Couëron, 44</em><br>
+<strong class="poste">Ingénieur de conception et développement .Net</strong></p>
+</div>
+<div class="paragraph">
+<p>Projet au forfait. Équipe de 10 à 15 personnes.<br>
+Corrections d&#8217;anomalies et réalisation d&#8217;évolutions sur une solution complète de gestion de billetterie et boutique :
+Programmation,
+vente (caisse, web, bornes tactiles),
+édition de billets (papier, numérique),
+gestion client,
+contrôle d&#8217;accès, &#8230;&#8203;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Définition d&#8217;exigences</p>
+</li>
+<li>
+<p>Chiffrages</p>
+</li>
+<li>
+<p>Spécifications fonctionnelles</p>
+</li>
+<li>
+<p>Conceptions techniques</p>
+</li>
+<li>
+<p>Développements</p>
+</li>
+<li>
+<p>Tests</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p><code>.Net 2.0 : C#2.0, WinForm, ASP.NET, Compact Framework, Web Services</code><br></p>
+</li>
+<li>
+<p><code>IIS 6 SQL Server 2005, Team Foundation Server, Visual Studio 2005 Team System</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Sept. 2005 - Nov. 2006</dt>
+<dt class="hdlist1"><strong class="entreprise">dixip</strong></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">MDPH 56</strong>
+<em class="lieu">Hennebont (56)</em><br>
+<strong class="poste">Ingénieur de conception et  développement</strong><br></p>
+</div>
+<div class="paragraph">
+<p>Conception, réalisation d&#8217;un système sécurisé de partage d&#8217;informations entre des logiciels hétérogènes existants (EAI).
+Architecture flexible et évolutive (plugins).
+Le système permet la mise en commun de données provenant de différentes structures publiques d&#8217;accompagnement de personnes handicapées.
+Les données recueillies constituent un dossier qui permet de faciliter l&#8217;évaluation des besoins matériels et financiers de la personne.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Spécifications techniques</p>
+</li>
+<li>
+<p>Responsable technique des développements (2 développeurs)</p>
+</li>
+<li>
+<p>Développements : Protocole de communication client/serveur, Serveur (Service Windows + Interface de contrôle et paramétrage)</p>
+</li>
+<li>
+<p>Fonction SQL de recherche de noms en phonétique (<em>soundex</em>)</p>
+</li>
+<li>
+<p>Formation d&#8217;un développeur Access à la programmation Objet</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique
+</td>
+<td class="hdlist2">
+<p><code>.Net 2.0 : C#2.0, WinForms, Custom Controls, TCP, Services Windows, Remoting, Serialization, Data Set, API Windows</code><br>
+<code>SQL Server 2000, Visual Studio 2005, <strong>SSL</strong> 3 (AES 256), <strong>Hash MD5</strong>, XML</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Mar. 2005 - Sept. 2005</dt>
+<dt class="hdlist1"><em class="entreprise">dixip</em></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">dixip</strong>
+<em class="lieu">Lorient (56)</em><br>
+<strong class="poste">Analyste programmeur / Formateur</strong><br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Conception et Réalisation d&#8217;applications mobiles sur Smartphones et PDA</p>
+</li>
+<li>
+<p>Développement d’applications Web</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique
+</td>
+<td class="hdlist2">
+<div class="ulist">
+<ul>
+<li>
+<p><code>Java J2ME : J2ME Polish, Bluetooth, HTTP, <strong>AES</strong>, MD5</code><br></p>
+</li>
+<li>
+<p><code>.NET CF 2.0 : C#, <strong>Bluetooth</strong></code><br></p>
+</li>
+<li>
+<p><code>Java J2EE, Struts, Hibernate, MySQL</code></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Fév. 2005</dt>
+<dt class="hdlist1"><em class="entreprise">dixip</em></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">Groupement Informatique du Crédit Mutuel</strong>
+<em class="lieu">Brest (29)</em><br>
+<strong class="poste">Ingénieur de conception et  développement</strong></p>
+</div>
+<div class="paragraph">
+<p>Application de consultation d’informations bancaires sur Smartphone.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Conception et réalisation</p>
+</li>
+<li>
+<p>Livraison du code source</p>
+</li>
+<li>
+<p>Formation de 4 développeurs à la plateforme et outils utilisés (3 jours en régie)</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique
+</td>
+<td class="hdlist2">
+<p><code>Java J2ME sous NetBean, HTTPS, J2ME Polish (GUI)</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Oct. 2004 - Jan. 2005</dt>
+<dt class="hdlist1"><em class="entreprise">dixip</em></dt>
+<dd>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong class="client">Logisyst56</strong>
+<em class="lieu">Éditeur de logiciel, Hennebont (56)</em><br>
+<strong class="poste">Analyste programmeur / Formateur</strong><br></p>
+</div>
+<div class="paragraph">
+<p>Maintenance et évolution d’un logiciel de gestion d’un magasin de matériel médical.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modifications fonctionnelles et corrections de    bugs</p>
+</li>
+<li>
+<p>Installation chez le client</p>
+</li>
+<li>
+<p>Formation d&#8217;utilisateurs</p>
+</li>
+<li>
+<p>Hotline</p>
+</li>
+</ul>
+</div>
+<div class="hdlist tech">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Env. technique
+</td>
+<td class="hdlist2">
+<p><code>VBA Access 2003 (Interface), SQL Server 2000</code></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_formations">Formations</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_professionnelles">Professionnelles</h3>
+<div class="hdlist formations">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+2020 
+</td>
+<td class="hdlist2">
+<p>Advanced Architecting on AWS <em>(3j)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2019 
+</td>
+<td class="hdlist2">
+<p>Angular / TypeScript / RxJS <em>(5j)</em>
+Architecting on AWS <em>(3j)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2018 
+</td>
+<td class="hdlist2">
+<p>Domain Driven Design - Cyrille Martraire <em>(3j)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2017 
+</td>
+<td class="hdlist2">
+<p>Machine learning*, cours du soir ML Week <em>(20h)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2016 
+</td>
+<td class="hdlist2">
+<p>Git <em>(3j)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2015 
+</td>
+<td class="hdlist2">
+<p>Linux <em>(2j)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2014 
+</td>
+<td class="hdlist2">
+<p>Développement java <em>(3j)</em><br>
+HTML + CSS <em>(2j)</em><br></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2010 
+</td>
+<td class="hdlist2">
+<p>Spring + JPA <em>(4j)</em></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conférences">Conférences</h3>
+<div class="hdlist formations">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Devoxx France   
+</td>
+<td class="hdlist2">
+<p>2013, 2014, 2015, 2017, 2020, 2022</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Devfest Nantes  
+</td>
+<td class="hdlist2">
+<p>2015, 2016, 2017, 2018, 2019, 2021, 2022</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+BreizhCamp      
+</td>
+<td class="hdlist2">
+<p>2015</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scolaires">Scolaires</h3>
+<div class="hdlist formations">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+2002 - 2004 
+</td>
+<td class="hdlist2">
+<p>Licence et Maîtrise GEII <em>(Génie Électrique et Informatique Industrielle)</em><br>
+<span class="small">option Ingénierie des circuits et des systèmes</span><br>
+<em>IUP de Lorient (56)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2001 - 2002 
+</td>
+<td class="hdlist2">
+<p>DUT GEII<br>
+<span class="small">option Réseaux Locaux Industriels</span><br>
+<em>IUT de Lannion (22)</em></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+2000 
+</td>
+<td class="hdlist2">
+<p>Baccalauréat série Scientifique<br>
+<span class="small">option Technologie Industrielle</span><br>
+<em>Lycée La Mennais à Ploërmel (56)</em></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_langues">Langues</h2>
+<div class="sectionbody">
+<div class="hdlist formations">
+<table>
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 82%;">
+</colgroup>
+<tr>
+<td class="hdlist1">
+Anglais 
+</td>
+<td class="hdlist2">
+<p>Courant<br>
+TOEIC <em class="small">(2002)</em> : 820/995<br>
+Séjour de 3 mois à Cardiff (UK) en 2003</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Allemand 
+</td>
+<td class="hdlist2">
+<p>Scolaire</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Ce CV est écrit en <a href="https://asciidoctor.org" target="_blank" rel="noopener">AsciiDoc</a> :) Les sources sont consultables sur <a href="https://github.com/zeludo/zeludo.github.io" target="_blank" rel="noopener">Github</a>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Dernière modification : 12/07/2023&nbsp;11:48
+</div>
+</div>
+</body>
+</html>

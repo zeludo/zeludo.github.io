@@ -1,0 +1,211 @@
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+
+/*@import url(https://raw.githubusercontent.com/darshandsoni/asciidoctor-skins/gh-pages/css/material-blue.css);*/
+
+body {
+    /*transform-origin: center 0;
+    transform: scale(0.85)*/
+}
+
+#author {
+    font-style: italic;
+}
+
+dl {
+    padding: 0 0.5em;
+}
+dl dt {
+    float: left;
+    clear: left;
+    padding:  0 0.25em;
+    margin: 0 1em 0 0;
+    background:rgba(0,0,0,.78);
+    color:white;
+    width: 18%;
+    min-width: 195px;
+}
+dl dd {
+    padding: 0 0 0 0%;
+    margin: 0 0 0 0em;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+    body.toc2 {
+        padding: 0;
+    }
+    #toc.toc2 {
+        position: relative;
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    body.toc2 {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+    body {
+        margin: 0;
+        /*transform: scale(1);*/
+    }
+    #toc.toc2 {
+        margin-top: 0 !important;
+        background: #f8f8f7;
+        position: fixed;
+        width: 16em;
+        left: 0;
+        top: 0;
+        border: 1px solid #e7e7e9;
+        border-right: 1px solid #e7e7e9;
+        border-top-width: 1px !important;
+        border-bottom-width: 1px !important;
+        z-index: 1000;
+        padding: 8.6em 1.25em 1em 1.25em;
+        height: 100%;
+        overflow: auto;
+    }
+    ##header, #content, #footnotes, #footer  {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    #content #toc {
+        padding-top: 6em;
+    }
+    body.toc2 {
+        padding-left: 16em;
+    }
+    /* Description list en colonne */
+    dl {
+        padding: 0 0.5em;
+    }
+    dl dt {
+        float: left;
+        clear: left;
+    }
+    dl dd {
+        padding: 0 0 0 18%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body.toc2 {
+        padding-left: 20em;
+    }
+    #toc.toc2 {
+        width: 20em;
+    }
+
+}
+
+@media screen and (min-width: 1921px) {
+    body.toc2 {
+        padding-left: 28em;
+    }
+    #toc.toc2 {
+        width: 28em;
+    }
+}
+
+#header, #content, #footnotes, #footer {
+    max-width: 1200px;/*Equiv. à 75em à 16px. Défaut 62.5em à 16px*/
+    min-width: 560px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+h1, h2, p, td.content, span.alt, summary {
+    letter-spacing: 0em;
+}
+
+.openblock > .title + .content > .sidebarblock:first-child {
+    margin-top: 1.25em;
+}
+.openblock > .title + .content > .sidebarblock {
+    margin-bottom: 0em;
+}
+
+
+li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .olist .ulis {
+    margin-bottom: 0.40em; /*0.625em*/
+}
+
+.hdlist > table {
+    width: 100%;
+}
+
+td.hdlist1, td.hdlist2 {
+    padding-bottom: 2em;
+}
+
+.client {
+    font-size: 1.1em
+}
+
+.sidebarblock {
+    background: #f9f9f8;
+    border: none;
+    border-radius: 8px;
+    padding-top: 0.1em;
+    /*padding-bottom: 0em;*/
+}
+.sidebarblock .sidebarblock .content {
+    border-bottom: dimgrey solid 1px;
+}
+.sidebarblock .sidebarblock:last-child .content  {
+    border-bottom: none;
+}
+
+.sidebarblock > .content > .title {
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    font-family: "Noto Serif","DejaVu Serif",serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tech dt,
+.tech .hdlist1 {
+    /*color: dimgray;*/
+    font-size: 0.95em;
+}
+
+.tech,
+.tech dd p,
+.tech .hdlist2 p,
+.skills dd p,
+.skills .hdlist2 p {
+/*    font-family: "Noto sans mono", monospace;
+    font-size: 0.9em;*/
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.skills dd p,
+.skills .hdlist2 p,
+.formations dd p,
+.formations .hdlist2 p {
+    margin-bottom: 0em;
+}
+
+.tech td.hdlist1,
+.tech td.hdlist2,
+.skills td.hdlist1,
+.skills td.hdlist2 {
+    padding-bottom: 0.5em;
+}
+
+.formations td.hdlist1,
+.formations td.hdlist2 {
+    padding-bottom: 0.5em;
+}
+:not(pre):not([class^=L])>code {
+    font-size: 0.88em;
+    color: inherit;
+    background-color: inherit;
+    padding: 0;
+}
