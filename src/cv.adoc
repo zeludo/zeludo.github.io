@@ -7,7 +7,7 @@
 :docinfo:
 :icons: font
 
-:last-update-label: Dernière modification
+:last-update-label: Dernière modification :
 
 :toc: left
 ifdef::backend-pdf[]

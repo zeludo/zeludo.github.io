@@ -265,8 +265,8 @@ list:
 #    font_size: $base_font_size_small
 #    line_height: 1
 #    vertical_align: middle
-#footer:
-#    font_size: $base_font_size_small
+footer:
+    font_size: $base_font_size_small
 #    # NOTE if background_color is set, background and border will span width of page
 #    border_color: DDDDDD
 #    border_width: 0.25
@@ -274,9 +274,13 @@ list:
 #    line_height: 1
 #    padding: [$base_line_height_length / 2, 1, 0, 1]
 #    vertical_align: top
-#    recto:
-#        right:
-#            content: '{page-number}'
+    recto:
+        left:
+            font-color: AAAAAA
+            font-size:
+            content: '{last-update-label} {docdatetime}'
+        right:
+            content: '{page-number}'
 #    verso:
 #        left:
 #            content: $footer_recto_right_content
